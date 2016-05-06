@@ -18,7 +18,7 @@ int main(){
 	while(scanf("%s",palavra)!=EOF){
 		i=0;
 		soma=0;
-		//if(flag==1)printf("\n");
+		if(flag==1)printf("\n");
 		for(i;i<30;i++){
 			if(palavra[i]=='\0')break;
 			//printf("%d",palavra[i]);
@@ -29,9 +29,9 @@ int main(){
 			//printf("%d",soma);
 		}
 		if(isprime(soma)==1)
-			printf("It is a prime word.\n");
+			printf("It is a prime word.");
 		else
-			printf("It is not a prime word.\n");
+			printf("It is not a prime word.");
 		flag=1;
 		i=0;
 		for(i;i<29;i++) palavra[i]='\0';
